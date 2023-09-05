@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PH Tube</title>
+<link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<html data-theme="light"></html>
+</head>
+<body>
+          <header class="lg:px-28 px-2 my-10">
+                    <div class="navbar bg-base-100">
+                    <div class="navbar-start">
+                    <img src="Logo.png">
+                    </div>
+                    <div class="navbar-center">
+                    <button onclick="sortByView()" class="btn normal-case text-xl active:bg-red-500 active:text-white hover:bg-red-500 hover:text-white">Sort By view</button>
+          
+                    </div>
+                    <div class="navbar-end">
+                    <a href="blog.html"><button class="btn bg-red-500 text-white">Blog</button></a>
+                    </div>
+                    </div>
+                    </header>
+          <main>
+               <section>
+          <!-- tabs section -->
+                    <div id="tabs" class="flex flex-wrap gap-4  item-center justify-center mx-auto">
+                    </div>
+               </section>
+               <section id="errory" class="hidden">
+          <!-- error section if any data missing -->
+                    <div class=" item-center justify-center text-center pt-36">
+                    <img class="mb-4 mx-auto" src="Icon.png">
+                    <h1 class="text-4xl font-bold">Oops!! Sorry, There is no <br> content here</h1> 
+                    </div>
+               </section> 
+               <section >
+          <!-- container section where api data will display  -->
+                    <div id="container" class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:px-28 px-5 gap-10 my-10">
+                    </div>
+                    </div>
+                    </div>
+                    </section>       
+          </main>
+<script src="index.js"></script>
+</body>
+</html>
